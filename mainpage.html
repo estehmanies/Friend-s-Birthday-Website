@@ -55,15 +55,12 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script>
         window.onload = function() {
-            // Efek ledakan confetti pertama
             confetti({
                 particleCount: 150,
                 spread: 70,
                 origin: { y: 0.6 },
                 colors: ['#5d4037', '#8d6e63', '#ffffff', '#f4a460']
             });
-
-            // Efek hujan confetti dari sisi kiri dan kanan
             var duration = 3 * 1000;
             var end = Date.now() + duration;
 
@@ -90,4 +87,5 @@
         };
     </script>
 </body>
+
 </html>
